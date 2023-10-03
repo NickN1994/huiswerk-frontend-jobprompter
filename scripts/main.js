@@ -77,7 +77,7 @@ const departments = {
 // console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
 // console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description);
 
-// Opdracht 2
+// Opdracht 4
 const userInput = prompt("Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]");
 console.log(userInput);
 
@@ -103,7 +103,8 @@ switch (userInput) {
             default:
                 console.log("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.")
         }
-    case "sales":
+    break;
+        case "sales":
         console.log("Sales is een leuke afdeling om te werken. Er werken op dit moment " + [departments.sales.numberOfEmployees] + " medewerkers.");
 
         const userInputTwo = prompt("Je koos sales Over welke functie wil je meer weten? Voer een getal tussen 0 en 3." + "\n" + "0 : " + departments.sales.jobs[0].title + "\n" + " 1 : " + departments.sales.jobs[1].title + "\n" + " 2 : " + departments.sales.jobs[2].title + "\n" + " 3 : " + departments.sales.jobs[3].title);
@@ -124,7 +125,7 @@ switch (userInput) {
             default:
                 console.log("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.")
         }
-
+    break;
     case "customer-service":
         console.log("customer-service is een leuke afdeling om te werken. Er werken op dit moment " + [departments["customer-service"].numberOfEmployees] + " medewerkers.");
 
